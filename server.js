@@ -1,4 +1,4 @@
-const express =  require('express')
+const express = require('express')
 const expressGraphQL = require('express-graphql')
 
 const schema = require('./schema/schema')
@@ -11,5 +11,6 @@ app.use('/graphql', expressGraphQL({
 }))
 
 app.listen(4000, () => {
+  // eslint-disable-next-line no-console
   console.log('Listening on PORT 4000...')
 })
